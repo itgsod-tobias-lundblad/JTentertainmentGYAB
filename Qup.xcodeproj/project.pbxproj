@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DFBC1FE1E43338F00B05156 /* testiklar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBC1FD1E43338F00B05156 /* testiklar.swift */; };
 		2016A23C1E2F7357001AA45A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2016A23B1E2F7357001AA45A /* AppDelegate.swift */; };
 		2016A23E1E2F7357001AA45A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2016A23D1E2F7357001AA45A /* ViewController.swift */; };
 		2016A2411E2F7357001AA45A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2016A23F1E2F7357001AA45A /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DFBC1FD1E43338F00B05156 /* testiklar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testiklar.swift; sourceTree = "<group>"; };
 		2016A2381E2F7357001AA45A /* Qup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2016A23B1E2F7357001AA45A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2016A23D1E2F7357001AA45A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				2016A23B1E2F7357001AA45A /* AppDelegate.swift */,
 				2016A23D1E2F7357001AA45A /* ViewController.swift */,
 				2016A23F1E2F7357001AA45A /* Main.storyboard */,
+				1DFBC1FD1E43338F00B05156 /* testiklar.swift */,
 				2016A2421E2F7357001AA45A /* Assets.xcassets */,
 				2016A2441E2F7357001AA45A /* LaunchScreen.storyboard */,
 				2016A2471E2F7357001AA45A /* Info.plist */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFBC1FE1E43338F00B05156 /* testiklar.swift in Sources */,
 				2016A23E1E2F7357001AA45A /* ViewController.swift in Sources */,
 				2016A23C1E2F7357001AA45A /* AppDelegate.swift in Sources */,
 			);
