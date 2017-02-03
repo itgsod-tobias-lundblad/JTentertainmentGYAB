@@ -14,6 +14,11 @@
 		2016A2431E2F7357001AA45A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2016A2421E2F7357001AA45A /* Assets.xcassets */; };
 		2016A2461E2F7357001AA45A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2016A2441E2F7357001AA45A /* LaunchScreen.storyboard */; };
 		2016A2511E2F7358001AA45A /* QupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2016A2501E2F7358001AA45A /* QupTests.swift */; };
+		203BF6971E448EA90016DBCA /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203BF6961E448EA90016DBCA /* ResultsViewController.swift */; };
+		20E0A5DA1E4338FB009B9353 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0A5D91E4338FB009B9353 /* Question.swift */; };
+		20E0A5DC1E433DF3009B9353 /* questionviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0A5DB1E433DF3009B9353 /* questionviewViewController.swift */; };
+		20E0A5DE1E435F5F009B9353 /* loadquestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0A5DD1E435F5F009B9353 /* loadquestions.swift */; };
+		20E0A5E01E43656D009B9353 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0A5DF1E43656D009B9353 /* CategoriesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		2016A24C1E2F7358001AA45A /* QupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2016A2501E2F7358001AA45A /* QupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QupTests.swift; sourceTree = "<group>"; };
 		2016A2521E2F7358001AA45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		203BF6961E448EA90016DBCA /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		20E0A5D91E4338FB009B9353 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		20E0A5DB1E433DF3009B9353 /* questionviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = questionviewViewController.swift; sourceTree = "<group>"; };
+		20E0A5DD1E435F5F009B9353 /* loadquestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loadquestions.swift; sourceTree = "<group>"; };
+		20E0A5DF1E43656D009B9353 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,11 @@
 				2016A23B1E2F7357001AA45A /* AppDelegate.swift */,
 				2016A23D1E2F7357001AA45A /* ViewController.swift */,
 				2016A23F1E2F7357001AA45A /* Main.storyboard */,
+				203BF6961E448EA90016DBCA /* ResultsViewController.swift */,
+				20E0A5DF1E43656D009B9353 /* CategoriesViewController.swift */,
+				20E0A5DB1E433DF3009B9353 /* questionviewViewController.swift */,
+				20E0A5DD1E435F5F009B9353 /* loadquestions.swift */,
+				20E0A5D91E4338FB009B9353 /* Question.swift */,
 				1DFBC1FD1E43338F00B05156 /* testiklar.swift */,
 				2016A2421E2F7357001AA45A /* Assets.xcassets */,
 				2016A2441E2F7357001AA45A /* LaunchScreen.storyboard */,
@@ -204,8 +219,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DFBC1FE1E43338F00B05156 /* testiklar.swift in Sources */,
+				20E0A5DE1E435F5F009B9353 /* loadquestions.swift in Sources */,
+				20E0A5DA1E4338FB009B9353 /* Question.swift in Sources */,
 				2016A23E1E2F7357001AA45A /* ViewController.swift in Sources */,
 				2016A23C1E2F7357001AA45A /* AppDelegate.swift in Sources */,
+				20E0A5E01E43656D009B9353 /* CategoriesViewController.swift in Sources */,
+				20E0A5DC1E433DF3009B9353 /* questionviewViewController.swift in Sources */,
+				203BF6971E448EA90016DBCA /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
