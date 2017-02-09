@@ -107,6 +107,9 @@
                                                 <state key="normal" title="Allsvenskan">
                                                     <color key="titleColor" red="0.035509500652551651" green="0.0044221384450793266" blue="0.016129877418279648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="allsvenskanButton:" destination="Sbs-vl-BFW" eventType="touchUpInside" id="Vw8-oZ-ZuZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKY-4b-WAO">
                                                 <rect key="frame" x="48" y="367" width="277" height="50"/>
@@ -143,6 +146,9 @@
                                                 <state key="normal" title="LaLiga">
                                                     <color key="titleColor" red="0.035509500652551651" green="0.0044221384450793266" blue="0.016129877418279648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="laligaButton:" destination="Sbs-vl-BFW" eventType="touchUpInside" id="sfW-iG-b94"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm2-CZ-xSw">
                                                 <rect key="frame" x="48" y="276" width="278" height="50"/>
@@ -253,7 +259,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nsa-W9-Yz3">
                                 <rect key="frame" x="16" y="409" width="140" height="66"/>
-                                <color key="backgroundColor" red="0.65110105276107788" green="0.11383948475122452" blue="0.95262628793716431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="kd1-7w-Wts"/>
                                     <constraint firstAttribute="height" constant="66" id="mq7-Be-HK8"/>
@@ -267,7 +273,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wFj-Us-YtH">
                                 <rect key="frame" x="219" y="409" width="140" height="66"/>
-                                <color key="backgroundColor" red="0.65110105276107788" green="0.11383948475122452" blue="0.95262628793716431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="LmB-OE-hcV"/>
                                     <constraint firstAttribute="width" constant="140" id="xq9-JR-16c"/>
@@ -281,7 +287,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wAO-jV-M6w">
                                 <rect key="frame" x="16" y="532" width="140" height="66"/>
-                                <color key="backgroundColor" red="0.65110105276107788" green="0.11383948475122452" blue="0.95262628793716431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="V1g-ZH-bxI"/>
                                     <constraint firstAttribute="height" constant="66" id="elo-89-bHW"/>
@@ -307,7 +313,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hsC-J5-4m5">
                                 <rect key="frame" x="219" y="532" width="140" height="66"/>
-                                <color key="backgroundColor" red="0.65110105276107788" green="0.11383948475122452" blue="0.95262628793716431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="0pN-Z0-cZR"/>
                                     <constraint firstAttribute="height" constant="66" id="9wK-CZ-KC8"/>

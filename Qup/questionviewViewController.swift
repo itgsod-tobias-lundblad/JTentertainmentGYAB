@@ -62,16 +62,24 @@ class questionviewViewController: UIViewController {
     func goToNextQuestion(sender: Any) {
         let senderButton = sender as! UIButton
         if senderButton.currentTitle == questionsArray[currentQuestionInt].correctAnswer {
+            senderButton.backgroundColor = UIColor.green
             correctCount += 1
             print(correctCount)
+        } else {
+            senderButton.backgroundColor = UIColor.red
         }
         
-        if currentQuestionInt < questionsArray.count - 1 {
-            currentQuestionInt += 1
-            loadQuestion()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+            // Put your code which should be executed with a delay here
+        
+        senderButton.backgroundColor = UIColor.magenta
+        if self.currentQuestionInt < self.questionsArray.count - 1 {
+            self.currentQuestionInt += 1
+            self.loadQuestion()
         } else {
             self.performSegue(withIdentifier:"showResults" , sender: sender)
         }
+        })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

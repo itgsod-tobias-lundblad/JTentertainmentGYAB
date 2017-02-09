@@ -32,6 +32,12 @@ class CategoriesViewController: UIViewController {
     @IBAction func primeiraligaButton(_ sender: Any) {
         self.performSegue(withIdentifier:"goToQuestions" , sender: sender)
     }
+    @IBAction func allsvenskanButton(_ sender: Any) {
+        self.performSegue(withIdentifier:"goToQuestions" , sender: sender)
+    }
+    @IBAction func laligaButton(_ sender: Any) {
+        self.performSegue(withIdentifier:"goToQuestions" , sender: sender)
+    }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -49,6 +55,18 @@ class CategoriesViewController: UIViewController {
             
             if senderButton.tag == 3 {
                 destination.questionsArray = Loadquestions.Bundesliga()
+            }
+            
+            if senderButton.tag == 4 {
+                destination.questionsArray = Loadquestions.Primeiraliga()
+            }
+            
+            if senderButton.tag == 5 {
+                destination.questionsArray = Loadquestions.Allsvenskan()
+            }
+            
+            if senderButton.tag == 6 {
+                destination.questionsArray = Loadquestions.Laliga()
             }
         }
     }
