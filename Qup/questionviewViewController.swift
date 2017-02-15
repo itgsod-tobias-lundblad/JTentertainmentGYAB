@@ -68,10 +68,12 @@ class questionviewViewController: UIViewController {
         } else {
             senderButton.backgroundColor = UIColor.red
         }
+        buttonswitchoff()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
         
         senderButton.backgroundColor = UIColor.magenta
+        self.buttonswitchOn()
         if self.currentQuestionInt < self.questionsArray.count - 1 {
             self.currentQuestionInt += 1
             self.loadQuestion()
@@ -87,15 +89,18 @@ class questionviewViewController: UIViewController {
             destination.resultString = "\(correctCount)/\(questionsArray.count)"
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: Helper Methods
+    func buttonswitchOn(){
+        option1.isEnabled = true
+        option2.isEnabled = true
+        option3.isEnabled = true
+        option4.isEnabled = true
     }
-    */
+    func buttonswitchoff(){
+        option1.isEnabled = false
+        option2.isEnabled = false
+        option3.isEnabled = false
+        option4.isEnabled = false
+    }
 
 }
