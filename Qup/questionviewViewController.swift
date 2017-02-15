@@ -70,7 +70,6 @@ class questionviewViewController: UIViewController {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-            // Put your code which should be executed with a delay here
         
         senderButton.backgroundColor = UIColor.magenta
         if self.currentQuestionInt < self.questionsArray.count - 1 {
