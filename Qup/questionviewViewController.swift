@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class questionviewViewController: UIViewController {
     @IBOutlet weak var question: UILabel!
 
@@ -22,6 +23,10 @@ class questionviewViewController: UIViewController {
     var correctCount = 0
     var currentQuestionInt = 0
     override func viewDidLoad() {
+        option1.isExclusiveTouch = true
+        option2.isExclusiveTouch = true
+        option3.isExclusiveTouch = true
+        option4.isExclusiveTouch = true
         super.viewDidLoad()
         print(questionsArray)
         loadQuestion()
@@ -60,6 +65,7 @@ class questionviewViewController: UIViewController {
     }
     
     func goToNextQuestion(sender: Any) {
+        buttonswitchoff()
         let senderButton = sender as! UIButton
         if senderButton.currentTitle == questionsArray[currentQuestionInt].correctAnswer {
             senderButton.backgroundColor = UIColor.green
@@ -68,7 +74,7 @@ class questionviewViewController: UIViewController {
         } else {
             senderButton.backgroundColor = UIColor.red
         }
-        buttonswitchoff()
+        
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
         

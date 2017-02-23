@@ -71,7 +71,7 @@ class Loadquestions {
         
         let question5 = Question(question: "Bayern München hold the reacord for the most amount of points accumulated in a single season. How many points did they get?", image: nil, option1: "97", option2: "102", option3: "88", option4: "91", correctAnswer: "91")
         
-        let question6 = Question(question: "Which club has had the worst goal difference in Bundesliga history?", image: nil, option1: "Hertha BSC", option2: "TSV 1860 München", option3: "Tasmania Berlin", option4: "VfB Stuttgart", correctAnswer: "Tasmania Berlin")
+        let question6 = Question(question: "Which club has had the worst goal difference in a single Bundesliga season?", image: nil, option1: "Hertha BSC", option2: "TSV 1860 München", option3: "Tasmania Berlin", option4: "VfB Stuttgart", correctAnswer: "Tasmania Berlin")
         
         let question7 = Question(question: "Which team has been relegated from the Bundesliga the most amount of times?", image: nil, option1: "FC Nürnberg", option2: "FC Kaiserslautern", option3: "Karlsruher SC", option4: "Ingolstadt", correctAnswer: "FC Nürnberg")
         
