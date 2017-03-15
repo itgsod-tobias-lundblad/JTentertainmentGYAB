@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import GameplayKit
 
 class questionviewViewController: UIViewController {
     @IBOutlet weak var question: UILabel!
@@ -29,21 +29,38 @@ class questionviewViewController: UIViewController {
         option4.isExclusiveTouch = true
         super.viewDidLoad()
         print(questionsArray)
+        shuffle()
         loadQuestion()
         // Do any additional setup after loading the view.
     }
 
+    func shuffle() {
+      questionsArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: questionsArray) as! [Question]
+    }
+    
+    func shuffleoptions() -> [String]{
+        let currentQuestion = questionsArray[currentQuestionInt]
+        
+        var optionsArray = [currentQuestion.option1, currentQuestion.option2, currentQuestion.option3, currentQuestion.option4]
+        
+        optionsArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: optionsArray) as! [String]
+        
+        return optionsArray
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func loadQuestion() {
+        let optionsArray = shuffleoptions()
+        
         question.text = questionsArray[currentQuestionInt].question
-        option1.setTitle(questionsArray[currentQuestionInt].option1, for: .normal)
-        option2.setTitle(questionsArray[currentQuestionInt].option2, for: .normal)
-        option3.setTitle(questionsArray[currentQuestionInt].option3, for: .normal)
-        option4.setTitle(questionsArray[currentQuestionInt].option4, for: .normal)
+        option1.setTitle(optionsArray[0], for: .normal)
+        option2.setTitle(optionsArray[1], for: .normal)
+        option3.setTitle(optionsArray[2], for: .normal)
+        option4.setTitle(optionsArray[3], for: .normal)
         
         questionCount.text = "\(currentQuestionInt + 1)/\(questionsArray.count)"
     }
