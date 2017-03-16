@@ -15,7 +15,7 @@ class Loadquestions {
         
         let question2 = Question(question: "Which team has won the most BPL titles?", image: nil, option1: "Liverpool", option2: "Nottingham Forest", option3: "Arsenal", option4: "Manchester United", correctAnswer: "Manchester United")
         
-        let question3 = Question(question: "Which player has registered the most assists in premier league history?", image: nil, option1: "Frank Lampard", option2: "Kim Källström", option3: "Dennis Bergkamp", option4: "Steven Gerrard", correctAnswer: "Frank Lampard")
+        let question3 = Question(question: "Which player has registered the most assists in premier league history?", image: nil, option1: "Frank Lampard", option2: "Ryan Giggs", option3: "Dennis Bergkamp", option4: "Steven Gerrard", correctAnswer: "Ryan Giggs")
         
         let question4 = Question(question: "Which team has managed to accumulate the lowest amounts of points in a single season?", image: nil, option1: "Sunderland", option2: "Swansea City", option3: "Liverpool", option4: "Derby County", correctAnswer: "Derby County")
         
@@ -69,7 +69,7 @@ class Loadquestions {
         
         let question4 = Question(question: "Which club is the only team to have scored in every single game in an entire season?", image: nil, option1: "Bayern München", option2: "FC Köln", option3: "Borussia Dortmund", option4: "Hertha BSC", correctAnswer: "FC Köln")
         
-        let question5 = Question(question: "Bayern München hold the reacord for the most amount of points accumulated in a single season. How many points did they get?", image: nil, option1: "97", option2: "102", option3: "88", option4: "91", correctAnswer: "91")
+        let question5 = Question(question: "Bayern München hold the reacord for the most amount of points accumulated in a single Bundesliga season. How many points did they get?", image: nil, option1: "97", option2: "102", option3: "88", option4: "91", correctAnswer: "91")
         
         let question6 = Question(question: "Which club has had the worst goal difference in a single Bundesliga season?", image: nil, option1: "Hertha BSC", option2: "TSV 1860 München", option3: "Tasmania Berlin", option4: "VfB Stuttgart", correctAnswer: "Tasmania Berlin")
         
