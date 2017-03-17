@@ -18,7 +18,7 @@ class questionviewViewController: UIViewController {
     @IBOutlet weak var option3: UIButton!
     @IBOutlet weak var option4: UIButton!
     var questionsArray = [Question]()
-    
+    var currentquiz = 0
     @IBOutlet weak var questionCount: UILabel!
     var correctCount = 0
     var currentQuestionInt = 0
@@ -109,7 +109,9 @@ class questionviewViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showResults" {
             let destination = segue.destination as! ResultsViewController
-            destination.resultString = "\(correctCount)/\(questionsArray.count)"
+            destination.resultInt = correctCount
+            destination.questioncount = questionsArray.count
+            destination.currentquiz = currentquiz
         }
     }
     // MARK: Helper Methods
