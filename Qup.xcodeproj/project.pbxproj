@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D7D7F5F1E8504EB00B87882 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D7F5E1E8504EB00B87882 /* OptionViewController.swift */; };
 		1DFBC1FE1E43338F00B05156 /* testiklar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBC1FD1E43338F00B05156 /* testiklar.swift */; };
 		2016A23C1E2F7357001AA45A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2016A23B1E2F7357001AA45A /* AppDelegate.swift */; };
 		2016A23E1E2F7357001AA45A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2016A23D1E2F7357001AA45A /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D7D7F5E1E8504EB00B87882 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionViewController.swift; path = ../OptionViewController.swift; sourceTree = "<group>"; };
 		1DFBC1FD1E43338F00B05156 /* testiklar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testiklar.swift; sourceTree = "<group>"; };
 		2016A2381E2F7357001AA45A /* Qup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2016A23B1E2F7357001AA45A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		2016A23A1E2F7357001AA45A /* Qup */ = {
 			isa = PBXGroup;
 			children = (
+				1D7D7F5E1E8504EB00B87882 /* OptionViewController.swift */,
 				2016A23B1E2F7357001AA45A /* AppDelegate.swift */,
 				2016A23D1E2F7357001AA45A /* ViewController.swift */,
 				2016A23F1E2F7357001AA45A /* Main.storyboard */,
@@ -220,6 +223,7 @@
 			files = (
 				1DFBC1FE1E43338F00B05156 /* testiklar.swift in Sources */,
 				20E0A5DE1E435F5F009B9353 /* loadquestions.swift in Sources */,
+				1D7D7F5F1E8504EB00B87882 /* OptionViewController.swift in Sources */,
 				20E0A5DA1E4338FB009B9353 /* Question.swift in Sources */,
 				2016A23E1E2F7357001AA45A /* ViewController.swift in Sources */,
 				2016A23C1E2F7357001AA45A /* AppDelegate.swift in Sources */,
