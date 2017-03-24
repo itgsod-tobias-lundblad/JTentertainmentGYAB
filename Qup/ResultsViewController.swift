@@ -27,6 +27,10 @@ class ResultsViewController: UIViewController {
         showhighscore()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.view.backgroundColor = LoadOptions.backgroundColor()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

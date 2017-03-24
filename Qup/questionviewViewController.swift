@@ -22,6 +22,7 @@ class questionviewViewController: UIViewController {
     @IBOutlet weak var questionCount: UILabel!
     var correctCount = 0
     var currentQuestionInt = 0
+    
     override func viewDidLoad() {
         option1.isExclusiveTouch = true
         option2.isExclusiveTouch = true
@@ -33,7 +34,11 @@ class questionviewViewController: UIViewController {
         loadQuestion()
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.view.backgroundColor = LoadOptions.backgroundColor()
+    }
+    
     func shuffle() {
       questionsArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: questionsArray) as! [Question]
     }

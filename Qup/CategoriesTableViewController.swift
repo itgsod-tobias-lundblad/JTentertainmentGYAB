@@ -29,6 +29,8 @@ class CategoriesTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.view.backgroundColor = LoadOptions.backgroundColor()
+        
         Highscore0.text = defaults.string(forKey: "0")
         Highscore1.text = defaults.string(forKey: "1")
         Highscore2.text = defaults.string(forKey: "2")
@@ -46,7 +48,11 @@ class CategoriesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "showQuestion", sender: indexPath)
     }
-
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = LoadOptions.backgroundColor()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let indexPathRow = (sender as! NSIndexPath).row
         let destination = segue.destination as! questionviewViewController

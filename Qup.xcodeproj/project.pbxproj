@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D7D7F5F1E8504EB00B87882 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D7F5E1E8504EB00B87882 /* OptionViewController.swift */; };
+		1D7D7F611E852F8100B87882 /* loadOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D7F601E852F8100B87882 /* loadOptions.swift */; };
 		1DFBC1FE1E43338F00B05156 /* testiklar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFBC1FD1E43338F00B05156 /* testiklar.swift */; };
 		2016A23C1E2F7357001AA45A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2016A23B1E2F7357001AA45A /* AppDelegate.swift */; };
 		2016A23E1E2F7357001AA45A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2016A23D1E2F7357001AA45A /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		1D7D7F5E1E8504EB00B87882 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionViewController.swift; path = ../OptionViewController.swift; sourceTree = "<group>"; };
+		1D7D7F601E852F8100B87882 /* loadOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loadOptions.swift; sourceTree = "<group>"; };
 		1DFBC1FD1E43338F00B05156 /* testiklar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testiklar.swift; sourceTree = "<group>"; };
 		2016A2381E2F7357001AA45A /* Qup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2016A23B1E2F7357001AA45A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				1D7D7F5E1E8504EB00B87882 /* OptionViewController.swift */,
+				1D7D7F601E852F8100B87882 /* loadOptions.swift */,
 				2016A23B1E2F7357001AA45A /* AppDelegate.swift */,
 				2016A23D1E2F7357001AA45A /* ViewController.swift */,
 				2016A23F1E2F7357001AA45A /* Main.storyboard */,
@@ -229,6 +232,7 @@
 				2016A23C1E2F7357001AA45A /* AppDelegate.swift in Sources */,
 				203D59741E4DA93900384D35 /* CategoriesTableViewController.swift in Sources */,
 				20E0A5DC1E433DF3009B9353 /* questionviewViewController.swift in Sources */,
+				1D7D7F611E852F8100B87882 /* loadOptions.swift in Sources */,
 				203BF6971E448EA90016DBCA /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
