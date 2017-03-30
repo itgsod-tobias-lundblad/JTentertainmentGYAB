@@ -22,6 +22,7 @@ class questionviewViewController: UIViewController {
     @IBOutlet weak var questionCount: UILabel!
     var correctCount = 0
     var currentQuestionInt = 0
+    var buttonColor = UIColor.magenta
     
     override func viewDidLoad() {
         option1.isExclusiveTouch = true
@@ -37,6 +38,15 @@ class questionviewViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.view.backgroundColor = LoadOptions.backgroundColor()
+        loadButtonColor()
+    }
+    
+    func loadButtonColor() {
+        option1.backgroundColor = LoadOptions.buttonColor()
+        option2.backgroundColor = LoadOptions.buttonColor()
+        option3.backgroundColor = LoadOptions.buttonColor()
+        option4.backgroundColor = LoadOptions.buttonColor()
+        buttonColor = LoadOptions.buttonColor()
     }
     
     func shuffle() {
@@ -100,7 +110,7 @@ class questionviewViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
         
-        senderButton.backgroundColor = UIColor.magenta
+        senderButton.backgroundColor = self.buttonColor
         self.buttonswitchOn()
         if self.currentQuestionInt < self.questionsArray.count - 1 {
             self.currentQuestionInt += 1

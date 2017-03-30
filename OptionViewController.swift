@@ -12,15 +12,19 @@ import UIKit
 class OptionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet var Backgroundcolor: UIPickerView!
+    @IBOutlet var ButtonColor: UIPickerView!
     let defaults = UserDefaults.standard
     
-    let backgroundColorArray = ["Default", "Blue", "Red"]
-    
+    let backgroundColorArray = ["Default", "Blue", "Red", "Yellow", "Orange", "Purple"]
+    let buttonColorArray = ["Default", "White", "Grey", "Blue", "Purple"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Backgroundcolor.delegate = self
         Backgroundcolor.dataSource = self
+        
+        ButtonColor.delegate = self
+        ButtonColor.dataSource = self
         
         defaultSetting()
         // Do any additional setup after loading the view.
@@ -48,6 +52,11 @@ class OptionViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             let index = backgroundColorArray.index(of: savedSetting)!
             Backgroundcolor.selectRow(index, inComponent: 0, animated: false)
         }
+        
+        if let savedButtonSetting = defaults.object(forKey: "ButtonColor") as? String {
+            let index = buttonColorArray.index(of: savedButtonSetting)!
+            ButtonColor.selectRow(index, inComponent: 0, animated: false)
+        }
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
@@ -55,24 +64,53 @@ class OptionViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return backgroundColorArray.count
+        if pickerView.tag == 0 {
+            return backgroundColorArray.count
+        } else {
+            return buttonColorArray.count
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return backgroundColorArray[row]
+        if pickerView.tag == 0 {
+            return backgroundColorArray[row]
+        } else {
+            return buttonColorArray[row]
+        }
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
-        switch backgroundColorArray[row] {
-        case "Blue":
-            defaults.set("Blue", forKey: "backgroundColor")
-        case "Red":
-            defaults.set("Red", forKey: "backgroundColor")
-        default:
-            defaults.set("Default", forKey: "backgroundColor")
+        if pickerView.tag == 0 {
+            switch backgroundColorArray[row] {
+            case "Blue":
+                defaults.set("Blue", forKey: "backgroundColor")
+            case "Red":
+                defaults.set("Red", forKey: "backgroundColor")
+            case "Yellow":
+                defaults.set("Yellow", forKey: "backgroundColor")
+            case "Orange":
+                defaults.set("Orange", forKey: "backgroundColor")
+            case "Purple":
+                defaults.set("Purple", forKey: "backgroundColor")
+            default:
+                defaults.set("Default", forKey: "backgroundColor")
+            }
+            self.view.backgroundColor = LoadOptions.backgroundColor()
+        } else {
+            switch buttonColorArray[row] {
+            case "White":
+                defaults.set("White", forKey: "ButtonColor")
+            case "Grey":
+                defaults.set("Grey", forKey: "ButtonColor")
+            case "Blue":
+                defaults.set("Blue", forKey: "ButtonColor")
+            case "Purple":
+                defaults.set("Purple", forKey: "ButtonColor")
+            default:
+                defaults.set("Default", forKey: "ButtonColor")
+            }
         }
-        self.view.backgroundColor = LoadOptions.backgroundColor()
     }
+    
     /*
     // MARK: - Navigation
 
