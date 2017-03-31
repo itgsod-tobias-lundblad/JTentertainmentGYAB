@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6Gm-0R-Lh2">
-    <device id="retina4_7" orientation="portrait">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6Gm-0R-Lh2">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -93,47 +93,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cE7-JC-Crx">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cE7-JC-Crx">
                                 <rect key="frame" x="0.0" y="156" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btb-zJ-RAO">
-                                <rect key="frame" x="129" y="100" width="117" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Reset High score"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btb-zJ-RAO">
+                                <rect key="frame" x="65" y="100" width="260" height="30"/>
+                                <color key="backgroundColor" red="0.9250449934554974" green="0.27349100171224888" blue="0.74397241315523444" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Reset High score">
+                                    <color key="titleShadowColor" red="0.90242775537634401" green="0.98142682031472384" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="resetbutton:" destination="Uqz-bC-Fbc" eventType="touchUpInside" id="Vnv-gz-kkh"/>
                                 </connections>
                             </button>
-                            <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BAr-Uc-4rP">
+                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAr-Uc-4rP">
                                 <rect key="frame" x="0.0" y="409" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Background color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yA0-Vp-zcJ">
-                                <rect key="frame" x="120" y="156" width="135" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yA0-Vp-zcJ">
+                                <rect key="frame" x="0.0" y="156" width="375" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Button color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dt5-TC-Lu3">
-                                <rect key="frame" x="140" y="409" width="94" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Button color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dt5-TC-Lu3">
+                                <rect key="frame" x="0.0" y="409" width="375" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cE7-JC-Crx" firstAttribute="leading" secondItem="FOd-sj-JS2" secondAttribute="leading" id="1tx-Tv-QwH"/>
+                            <constraint firstItem="cE7-JC-Crx" firstAttribute="top" secondItem="btb-zJ-RAO" secondAttribute="bottom" constant="26" id="3Fj-DB-35q"/>
+                            <constraint firstAttribute="trailing" secondItem="cE7-JC-Crx" secondAttribute="trailing" id="7h4-fW-fKt"/>
+                            <constraint firstItem="btb-zJ-RAO" firstAttribute="leading" secondItem="FOd-sj-JS2" secondAttribute="leadingMargin" constant="49" id="DSW-m6-PV3"/>
+                            <constraint firstItem="BAr-Uc-4rP" firstAttribute="leading" secondItem="FOd-sj-JS2" secondAttribute="leading" id="JrW-Eg-nu8"/>
+                            <constraint firstItem="dt5-TC-Lu3" firstAttribute="top" secondItem="cE7-JC-Crx" secondAttribute="bottom" constant="37" id="NNs-eP-Vnb"/>
+                            <constraint firstItem="BAr-Uc-4rP" firstAttribute="leading" secondItem="FOd-sj-JS2" secondAttribute="leading" id="OiA-Js-wb0"/>
+                            <constraint firstAttribute="trailing" secondItem="yA0-Vp-zcJ" secondAttribute="trailing" id="YDB-4C-yLn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="btb-zJ-RAO" secondAttribute="trailing" constant="34" id="ZHK-jL-x40"/>
+                            <constraint firstAttribute="trailing" secondItem="cE7-JC-Crx" secondAttribute="trailing" id="aIF-dg-Oie"/>
+                            <constraint firstItem="dt5-TC-Lu3" firstAttribute="leading" secondItem="FOd-sj-JS2" secondAttribute="leading" id="bGc-by-hTw"/>
+                            <constraint firstItem="cE7-JC-Crx" firstAttribute="leading" secondItem="FOd-sj-JS2" secondAttribute="leading" id="bOd-pM-rYU"/>
+                            <constraint firstItem="yA0-Vp-zcJ" firstAttribute="leading" secondItem="FOd-sj-JS2" secondAttribute="leading" id="d1m-T0-etf"/>
+                            <constraint firstAttribute="trailing" secondItem="BAr-Uc-4rP" secondAttribute="trailing" id="rwp-wt-2T0"/>
+                            <constraint firstAttribute="trailing" secondItem="dt5-TC-Lu3" secondAttribute="trailing" id="skZ-Lk-ZQn"/>
+                            <constraint firstItem="yA0-Vp-zcJ" firstAttribute="top" secondItem="btb-zJ-RAO" secondAttribute="bottom" constant="26" id="ugk-fp-ELB"/>
+                            <constraint firstItem="btb-zJ-RAO" firstAttribute="top" secondItem="cy0-G2-pRy" secondAttribute="bottom" constant="36" id="y64-Jj-rUh"/>
+                            <constraint firstAttribute="trailing" secondItem="BAr-Uc-4rP" secondAttribute="trailing" id="z1g-42-r2G"/>
+                            <constraint firstItem="BAr-Uc-4rP" firstAttribute="top" secondItem="cE7-JC-Crx" secondAttribute="bottom" constant="37" id="zIt-pr-vsh"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="Backgroundcolor" destination="cE7-JC-Crx" id="UlN-Dt-IIH"/>
                         <outlet property="ButtonColor" destination="BAr-Uc-4rP" id="8Se-qc-Acy"/>
+                        <outlet property="resetButton" destination="btb-zJ-RAO" id="rve-Bt-bAg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIh-tw-WNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="817"/>
+            <point key="canvasLocation" x="1050.9375" y="951.23239436619724"/>
         </scene>
         <!--Categories Table View Controller-->
         <scene sceneID="A39-LN-Piw">
@@ -150,7 +171,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OdA-nL-FEZ" id="Slv-Aq-7V3">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="English premier league" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEh-qd-08V">
@@ -177,7 +198,7 @@
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RIW-pK-V0h" id="LEv-ta-Flc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Serie A" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETD-TH-cKz">
@@ -204,7 +225,7 @@
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sm1-0q-XNn" id="bmn-Zn-aNE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bundesliga" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYp-TR-Hxg">
@@ -238,7 +259,7 @@
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TYh-eP-gbW" id="yKu-Qh-FFX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Primeira Liga" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-eh-TLn">
@@ -265,7 +286,7 @@
                                         <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LwH-X3-diC" id="FPq-sG-Tgn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Allsvenskan" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcX-UG-FsI">
@@ -292,7 +313,7 @@
                                         <rect key="frame" x="0.0" y="220" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OI7-we-YmY" id="qzk-lF-9eu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La Liga" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ik5-lt-uVn">
@@ -472,11 +493,11 @@
                         <viewControllerLayoutGuide type="bottom" id="mue-lV-Egr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="irW-bw-bva">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results are in!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGl-uq-eYt">
-                                <rect key="frame" x="16" y="78" width="343" height="21"/>
+                                <rect key="frame" x="16" y="78" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -494,7 +515,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgF-Kz-6yS">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Results" id="rzJ-wk-htd">
                                         <barButtonItem key="leftBarButtonItem" title="Return to Menu" id="qA3-7L-ury">
@@ -518,7 +539,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New High Score!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0s-4v-L2X">
-                                <rect key="frame" x="16" y="228" width="343" height="21"/>
+                                <rect key="frame" x="16" y="228" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

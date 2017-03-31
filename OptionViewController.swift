@@ -10,6 +10,7 @@ import UIKit
 
 
 class OptionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    @IBOutlet var resetButton: UIButton!
     
     @IBOutlet var Backgroundcolor: UIPickerView!
     @IBOutlet var ButtonColor: UIPickerView!
@@ -26,6 +27,7 @@ class OptionViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         ButtonColor.delegate = self
         ButtonColor.dataSource = self
         
+        loadButtonColor()
         defaultSetting()
         // Do any additional setup after loading the view.
     }
@@ -38,6 +40,11 @@ class OptionViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func loadButtonColor() {
+        resetButton.backgroundColor = LoadOptions.buttonColor()
+    }
+    
     
     @IBAction func resetbutton(_ sender: Any) {
         defaults.set(nil, forKey: "0")
@@ -108,6 +115,7 @@ class OptionViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             default:
                 defaults.set("Default", forKey: "ButtonColor")
             }
+            loadButtonColor()
         }
     }
     

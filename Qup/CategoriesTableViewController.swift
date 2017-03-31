@@ -50,7 +50,7 @@ class CategoriesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = LoadOptions.backgroundColor()
+        cell.backgroundColor = LoadOptions.backgroundColor() 
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
